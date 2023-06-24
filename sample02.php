@@ -67,8 +67,9 @@ echo $date;
 //   echo 'ファイル書き込み失敗';
 // }
 
-$news = file_get_contents('data/new_file2');
-echo $news;
+// $news = file_get_contents('data/new_file2');
+// echo $news;
+readfile('data/new_file2');
 
 ?>
 </body>
