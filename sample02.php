@@ -56,7 +56,21 @@ if ($time < 18): ?>
 
 3000円から１００円引きは、
 <?php echo round(100/3000 * 100, 2); ?>％引きです。
+<?php
+$date = sprintf('%04d', 'abc');
+echo $date;
+// $success = file_put_contents('data/new_file2', '新しいファイルを作成したよ222');
 
+// if ($success !== false) {
+//   echo 'ファイル書き込み完了';
+// } else {
+//   echo 'ファイル書き込み失敗';
+// }
+
+$news = file_get_contents('data/new_file2');
+echo $news;
+
+?>
 </body>
 
 </html>
